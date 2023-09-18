@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "py-google-translator"
+version = "0.1.0"
+description = ""
+authors = ["Paramas <paramas.w@livinginsider.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+flask = "^2.3.3"
+deep-translator = "^1.11.4"
+language-tool-python = "^2.7.1"
+gunicorn = "^21.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
