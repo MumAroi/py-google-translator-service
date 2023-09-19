@@ -5,7 +5,7 @@ import language_tool_python
 
 app = Flask(__name__)
 
-PRIVATE_KEY="1223334444"
+PRIVATE_KEY="I3X23IxqxDOazSabbDVUte5IK1bGCVxr8GHO2Iyq9F4kTtBxF3VrVCpMMXxgQdGYU"
 
 @app.route("/", methods=["POST"])
 def translate():
