@@ -22,11 +22,11 @@ def translate():
         if not data or "message" not in data:
             return jsonify({"message": "Not have message"}), 400
 
-        if not data or "source" not in data:
+        if "source" in data:
             source = data["source"]
 
-        if not data or "target" not in data:
-            source = data["target"]
+        if "target" in data:
+            target = data["target"]
 
         text = data["message"]
         translated = GoogleTranslator(source=source, target=target).translate(text=text)
